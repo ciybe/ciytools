@@ -15,5 +15,4 @@ The bootstrap script will:
 
 Run this single command on your Proxmox node:
 
-```bash
-bash -c "$(curl -fsSL https://ciybt.github.io/ciytools/ciytools-install.sh)"
+bash -c "$(curl -fsSL https://ciybe.github.io/ciytools/ciytools-install.sh)
