@@ -31,6 +31,10 @@ function clone_or_update_repo() {
         sudo git clone "$REPO_URL" "$TARGET_DIR"
         sudo chown -R "$USER_NAME":"$USER_NAME" "$TARGET_DIR"
     fi
+
+    # Make all scripts executable
+    echo "[*] Ensuring scripts are executable ..."
+    sudo find "$SCRIPT_PATH" -type f -name "*.sh" -exec chmod +x {} \;
 }
 
 function configure_path() {
